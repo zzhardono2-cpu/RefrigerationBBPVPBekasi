@@ -2,13 +2,21 @@
 // Memuat komponen HTML
 // ======================================
 
-async function loadComponent(id, file) {
+async function loadComponent(id, file){
 
     const element = document.getElementById(id);
 
-    if (!element) return;
+    if(!element) return;
 
     const response = await fetch(file);
+
+    if(!response.ok){
+
+        console.error("Tidak dapat memuat:", file);
+
+        return;
+
+    }
 
     const html = await response.text();
 
@@ -16,18 +24,46 @@ async function loadComponent(id, file) {
 
 }
 
-// Header dan Footer selalu dimuat
+// ======================================
+// Menentukan lokasi file
+// ======================================
 
-loadComponent("header", "components/header.html");
+const basePath =
+location.pathname.includes("/jobsheets/")
+?
+"../"
+:
+"";
 
-loadComponent("footer", "components/footer.html");
+// ======================================
+// Header
+// ======================================
 
-// Sidebar hanya dimuat jika elemennya ada
+loadComponent(
+    "header",
+    basePath + "components/header.html"
+);
 
-const sidebar = document.getElementById("sidebar");
+// ======================================
+// Footer
+// ======================================
+
+loadComponent(
+    "footer",
+    basePath + "components/footer.html"
+);
+
+// ======================================
+// Sidebar
+// ======================================
+
+const sidebar=document.getElementById("sidebar");
 
 if(sidebar){
 
-    loadComponent("sidebar","components/sidebar.html");
+loadComponent(
+"sidebar",
+basePath+"components/sidebar.html"
+);
 
 }
