@@ -2,25 +2,29 @@
 // Memuat komponen HTML
 // ======================================
 
-async function loadComponent(id, file){
+async function loadComponent(id, file) {
 
     const element = document.getElementById(id);
 
-    if(!element) return;
+    if (!element) return;
 
-    const response = await fetch(file);
+    try {
 
-    if(!response.ok){
+        const response = await fetch(file);
 
-        console.error("Tidak dapat memuat:", file);
+        if (!response.ok) {
+            throw new Error(file);
+        }
 
-        return;
+        const html = await response.text();
+
+        element.innerHTML = html;
+
+    } catch (error) {
+
+        console.log("Komponen tidak ditemukan :", file);
 
     }
-
-    const html = await response.text();
-
-    element.innerHTML = html;
 
 }
 
@@ -28,42 +32,30 @@ async function loadComponent(id, file){
 // Menentukan lokasi file
 // ======================================
 
-const basePath =
-location.pathname.includes("/jobsheets/")
-?
-"../"
-:
-"";
+const inJobsheet = window.location.pathname.includes("/jobsheets/");
+
+const componentPath = inJobsheet
+    ? "../components/"
+    : "components/";
 
 // ======================================
 // Header
 // ======================================
 
-loadComponent(
-    "header",
-    basePath + "components/header.html"
-);
+loadComponent("header", componentPath + "header.html");
 
 // ======================================
 // Footer
 // ======================================
 
-loadComponent(
-    "footer",
-    basePath + "components/footer.html"
-);
+loadComponent("footer", componentPath + "footer.html");
 
 // ======================================
 // Sidebar
 // ======================================
 
-const sidebar=document.getElementById("sidebar");
+if (document.getElementById("sidebar")) {
 
-if(sidebar){
-
-loadComponent(
-"sidebar",
-basePath+"components/sidebar.html"
-);
+    loadComponent("sidebar", componentPath + "sidebar.html");
 
 }
