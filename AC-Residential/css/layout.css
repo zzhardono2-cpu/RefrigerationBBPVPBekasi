@@ -1,55 +1,102 @@
 /* ===========================================
-   LAYOUT.CSS
-   eSHa Public Skills Learning
-   =========================================== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f3f5f8;
-    color:#222;
-}
-
-/* ================= HEADER ================= */
+   HEADER
+=========================================== */
 
 .main-header{
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
+
+    padding:18px 60px;
 
     background:#005BAC;
 
-    color:white;
-
-    padding:25px 80px;
+    color:#fff;
 
 }
 
-.logo h1{
+.header-left{
 
-    font-size:48px;
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+}
+
+.logo-bbpvp img{
+
+    width:70px;
+    height:auto;
 
 }
 
-.logo span{
+.header-title h1{
 
-    font-size:22px;
+    margin:0;
+
+    font-size:34px;
+
+    font-weight:700;
 
 }
+
+.header-title p{
+
+    margin-top:5px;
+
+    font-size:16px;
+
+    opacity:.9;
+
+}
+
+.divider{
+
+    width:2px;
+    height:70px;
+
+    background:rgba(255,255,255,.35);
+
+}
+
+.header-brand{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.header-brand img{
+
+    width:55px;
+    height:auto;
+
+}
+
+.header-brand h2{
+
+    margin:0;
+
+    font-size:34px;
+
+}
+
+.header-brand span{
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   MENU
+========================== */
 
 .main-header nav{
 
     display:flex;
-
-    gap:40px;
+    gap:45px;
 
 }
 
@@ -59,162 +106,16 @@ body{
 
     text-decoration:none;
 
-    font-weight:bold;
-
     font-size:20px;
+
+    font-weight:600;
+
+    transition:.25s;
 
 }
 
 .main-header nav a:hover{
 
     color:#FFD54A;
-
-}
-
-/* ================= CONTENT ================= */
-
-.page-content{
-
-    display:flex;
-
-    gap:35px;
-
-    padding:45px 60px;
-
-    align-items:flex-start;
-
-}
-
-/* ================= SIDEBAR ================= */
-
-.sidebar{
-
-    width:300px;
-
-    background:white;
-
-    border-radius:18px;
-
-    padding:30px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
-
-}
-
-.sidebar h2{
-
-    margin-bottom:25px;
-
-    color:#005BAC;
-
-}
-
-.sidebar ul{
-
-    list-style:none;
-
-}
-
-.sidebar li{
-
-    margin-bottom:18px;
-
-}
-
-.sidebar a{
-
-    text-decoration:none;
-
-    color:#333;
-
-    font-weight:600;
-
-}
-
-.sidebar a:hover{
-
-    color:#005BAC;
-
-}
-
-/* ================= CONTENT ================= */
-
-.content{
-
-    flex:1;
-
-}
-
-/* ================= HERO ================= */
-
-.hero{
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:80px;
-
-    text-align:center;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
-
-}
-
-.hero h2{
-
-    font-size:52px;
-
-    margin-bottom:25px;
-
-}
-
-.hero p{
-
-    font-size:24px;
-
-    margin-bottom:40px;
-
-}
-
-.button{
-
-    display:inline-block;
-
-    padding:18px 50px;
-
-    background:#005BAC;
-
-    color:white;
-
-    text-decoration:none;
-
-    font-size:24px;
-
-    font-weight:bold;
-
-    border-radius:10px;
-
-}
-
-.button:hover{
-
-    background:#003f7d;
-
-}
-
-/* ================= FOOTER ================= */
-
-.main-footer{
-
-    background:#003f7d;
-
-    color:white;
-
-    text-align:center;
-
-    padding:20px;
-
-    margin-top:50px;
 
 }
