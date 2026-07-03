@@ -1,22 +1,27 @@
-/* ===========================================
-   COMPONENTS.CSS
-   =========================================== */
-
-/* HERO */
+/* ==========================================
+   HERO SECTION
+========================================== */
 
 .hero{
 
-    background:white;
+    width:100%;
 
-    border-radius:20px;
+    margin:0;
 
-    overflow:hidden;
+    padding:0;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    background:transparent;
+
+    box-shadow:none;
+
+    border-radius:0;
 
 }
 
-/* HERO IMAGE */
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
 
 .hero img{
 
@@ -24,25 +29,49 @@
 
     width:100%;
 
-    height:auto;
+    max-width:1400px;
+
+    margin:40px auto 0 auto;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.15);
 
 }
 
-/* HERO BUTTON */
+
+/* ==========================================
+   HERO ACTION
+========================================== */
 
 .hero-action{
 
-    padding:40px;
-
     text-align:center;
 
+    margin:40px 0 60px;
+
 }
+
+.hero-action p{
+
+    font-size:22px;
+
+    color:#444;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
 
 .button{
 
     display:inline-block;
 
-    padding:18px 45px;
+    padding:20px 60px;
 
     background:#005BAC;
 
@@ -50,18 +79,22 @@
 
     text-decoration:none;
 
-    font-size:22px;
+    font-size:24px;
 
-    font-weight:bold;
+    font-weight:700;
 
     border-radius:10px;
 
     transition:.3s;
 
+    box-shadow:0 8px 20px rgba(0,91,172,.30);
+
 }
 
 .button:hover{
 
-    background:#003f7d;
+    background:#00458A;
+
+    transform:translateY(-3px);
 
 }
