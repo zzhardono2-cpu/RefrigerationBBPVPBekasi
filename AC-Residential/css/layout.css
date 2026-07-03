@@ -1,86 +1,111 @@
-/* Layout Website */
-/* ===== HEADER ===== */
+/* ===========================================
+   LAYOUT.CSS
+   eSHa Public Skills Learning
+   =========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f5f8;
+    color:#222;
+}
+
+/* ================= HEADER ================= */
 
 .main-header{
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:20px 60px;
+    background:#005BAC;
 
-background:#005BAC;
+    color:white;
 
-color:white;
+    padding:25px 80px;
 
 }
 
 .logo h1{
 
-font-size:36px;
-
-margin-bottom:5px;
+    font-size:48px;
 
 }
 
 .logo span{
 
-font-size:18px;
+    font-size:22px;
 
 }
 
 .main-header nav{
 
-display:flex;
+    display:flex;
 
-gap:30px;
+    gap:40px;
 
 }
 
 .main-header nav a{
 
-color:white;
+    color:white;
 
-text-decoration:none;
+    text-decoration:none;
 
-font-weight:600;
+    font-weight:bold;
 
-transition:.3s;
+    font-size:20px;
 
 }
 
 .main-header nav a:hover{
 
-color:#FFD54A;
+    color:#FFD54A;
 
 }
-/* ========================= */
-/* CONTENT LAYOUT            */
-/* ========================= */
+
+/* ================= CONTENT ================= */
 
 .page-content{
 
     display:flex;
 
-    gap:30px;
+    gap:35px;
 
-    padding:40px;
+    padding:45px 60px;
+
+    align-items:flex-start;
 
 }
 
+/* ================= SIDEBAR ================= */
+
 .sidebar{
 
-    width:280px;
+    width:300px;
 
     background:white;
 
-    padding:25px;
+    border-radius:18px;
 
-    border-radius:15px;
+    padding:30px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+}
+
+.sidebar h2{
+
+    margin-bottom:25px;
+
+    color:#005BAC;
 
 }
 
@@ -88,13 +113,11 @@ color:#FFD54A;
 
     list-style:none;
 
-    padding:0;
-
 }
 
 .sidebar li{
 
-    margin:18px 0;
+    margin-bottom:18px;
 
 }
 
@@ -102,14 +125,96 @@ color:#FFD54A;
 
     text-decoration:none;
 
-    color:#005BAC;
+    color:#333;
 
-    font-weight:bold;
+    font-weight:600;
 
 }
+
+.sidebar a:hover{
+
+    color:#005BAC;
+
+}
+
+/* ================= CONTENT ================= */
 
 .content{
 
     flex:1;
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:80px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+}
+
+.hero h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:24px;
+
+    margin-bottom:40px;
+
+}
+
+.button{
+
+    display:inline-block;
+
+    padding:18px 50px;
+
+    background:#005BAC;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    border-radius:10px;
+
+}
+
+.button:hover{
+
+    background:#003f7d;
+
+}
+
+/* ================= FOOTER ================= */
+
+.main-footer{
+
+    background:#003f7d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
 
 }
