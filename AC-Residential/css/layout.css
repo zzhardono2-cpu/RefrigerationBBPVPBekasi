@@ -56,3 +56,60 @@ transition:.3s;
 color:#FFD54A;
 
 }
+/* ========================= */
+/* CONTENT LAYOUT            */
+/* ========================= */
+
+.page-content{
+
+    display:flex;
+
+    gap:30px;
+
+    padding:40px;
+
+}
+
+.sidebar{
+
+    width:280px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.sidebar li{
+
+    margin:18px 0;
+
+}
+
+.sidebar a{
+
+    text-decoration:none;
+
+    color:#005BAC;
+
+    font-weight:bold;
+
+}
+
+.content{
+
+    flex:1;
+
+}
