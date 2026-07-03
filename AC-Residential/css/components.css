@@ -1,85 +1,113 @@
-/* ==========================================
+/* ===================================================
    HERO SECTION
-========================================== */
+=================================================== */
 
 .hero{
 
-    width:100%;
-
-    margin:0;
-
-    padding:0;
-
-    background:transparent;
-
-    box-shadow:none;
-
-    border-radius:0;
+    padding:70px 0;
 
 }
 
-
-/* ==========================================
-   HERO IMAGE
-========================================== */
-
-.hero img{
-
-    display:block;
-
-    width:100%;
+.hero-content{
 
     max-width:1400px;
 
-    margin:40px auto 0 auto;
+    margin:auto;
 
-    border-radius:20px;
+    display:flex;
 
-    box-shadow:0 12px 35px rgba(0,0,0,.15);
+    align-items:center;
 
-}
+    justify-content:space-between;
 
-
-/* ==========================================
-   HERO ACTION
-========================================== */
-
-.hero-action{
-
-    text-align:center;
-
-    margin:40px 0 60px;
+    gap:70px;
 
 }
 
-.hero-action p{
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-label{
+
+    display:inline-block;
+
+    color:#F4B400;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+
+    text-transform:uppercase;
+
+}
+
+.hero-text h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    color:#003B73;
+
+    margin:0 0 25px;
+
+}
+
+.hero-text p{
 
     font-size:22px;
 
-    color:#444;
+    line-height:1.7;
 
-    margin-bottom:25px;
+    color:#555;
+
+    margin-bottom:40px;
+
+    max-width:600px;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    border-radius:24px;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
 
 }
 
 
-/* ==========================================
+/* ===================================================
    BUTTON
-========================================== */
+=================================================== */
 
 .button{
 
     display:inline-block;
 
-    padding:20px 60px;
+    padding:18px 55px;
 
     background:#005BAC;
 
-    color:white;
+    color:#fff;
 
     text-decoration:none;
 
-    font-size:24px;
+    font-size:22px;
 
     font-weight:700;
 
@@ -87,7 +115,7 @@
 
     transition:.3s;
 
-    box-shadow:0 8px 20px rgba(0,91,172,.30);
+    box-shadow:0 8px 20px rgba(0,91,172,.25);
 
 }
 
