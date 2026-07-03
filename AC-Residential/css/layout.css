@@ -1,50 +1,58 @@
 /* Layout Website */
-*{
+/* ===== HEADER ===== */
 
-margin:0;
-padding:0;
-box-sizing:border-box;
+.main-header{
 
-}
+display:flex;
 
-body{
+justify-content:space-between;
 
-font-family:Arial,Helvetica,sans-serif;
+align-items:center;
 
-background:var(--background);
+padding:20px 60px;
 
-color:var(--text);
-
-}
-
-header{
-
-background:var(--primary);
+background:#005BAC;
 
 color:white;
 
-padding:30px;
+}
 
-text-align:center;
+.logo h1{
+
+font-size:36px;
+
+margin-bottom:5px;
 
 }
 
-main{
+.logo span{
 
-padding:50px;
+font-size:18px;
 
 }
 
-footer{
+.main-header nav{
 
-background:#003D73;
+display:flex;
+
+gap:30px;
+
+}
+
+.main-header nav a{
 
 color:white;
 
-text-align:center;
+text-decoration:none;
 
-padding:20px;
+font-weight:600;
 
-margin-top:50px;
+transition:.3s;
+
+}
+
+.main-header nav a:hover{
+
+color:#FFD54A;
 
 }
