@@ -119,3 +119,32 @@
     color:#FFD54A;
 
 }
+/* ===========================================
+   WORLDSKILLS LOGO
+=========================================== */
+
+.main-nav{
+
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+}
+
+.ws-logo{
+
+    width:55px;
+
+    height:auto;
+
+    margin-left:20px;
+
+    transition:.3s;
+
+}
+
+.ws-logo:hover{
+
+    transform:scale(1.08);
+
+}
