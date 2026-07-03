@@ -1,1 +1,1 @@
-alert("JavaScript berjalan");
+// Main Application
