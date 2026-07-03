@@ -1,1 +1,1 @@
-// Main Application
+alert("JavaScript berjalan");
